@@ -5,7 +5,6 @@ public class Hitter : MonoBehaviour
 {
 	public int kind;
 	public GameObject parent;
-	public Sprite specialBubble;
 
 	void Start()
 	{
@@ -14,15 +13,8 @@ public class Hitter : MonoBehaviour
 		{
 			Color[] colorArray = new Color[] { Color.red, Color.cyan, Color.yellow, Color.green, Color.magenta };
 
-			kind = (int)Random.Range(1f, 7f);
-			if (kind == 6)
-			{
-				spriteRenderer.sprite = specialBubble;
-			}
-			else
-			{
-				spriteRenderer.color = colorArray[kind - 1];
-			}
+			kind = (int)Random.Range(1f, 6f);
+			spriteRenderer.color = colorArray[kind - 1];
 		}
 	}
 
