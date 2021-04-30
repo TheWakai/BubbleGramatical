@@ -9,4 +9,9 @@ public class Trigger : MonoBehaviour
 	{
 		SceneManager.LoadScene("Level1");
 	}
+
+	public void restart() 
+	{
+		SceneManager.LoadScene("Level1");
+	}
 }
